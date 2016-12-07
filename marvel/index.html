@@ -43,5 +43,86 @@
           }
       });
     </script>
+    <nav class="navbar navbar-custom navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Marvel</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://marvel.com/" target="_blank">Official Website<span class="sr-only">(current)</span></a></li>
+            <li><a href="http://marvel.com/universe/Main_Page" target="_blank">Wiki<span class="sr-only">(current)</span></a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" id="characterName" placeholder="Search">
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-default">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="header" class="page header">
+      <h1>LEARN ABOUT YOUR FAVORITE <span><font style='color:white;''>MARVEL</font></span> CHARACTERS</h1>
+    </div>
+    <div id="characters" class="container">
+      <div id="images" class="row"></div>
+      <div class="modal fade imagemodal"" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <img src="" class="col-md-8 imagepreview" >
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h1 class="imagetext modal-title" id="myModalLabel"></h1>
+                <span class="bottomtext">
+                  <a class="imagelink" href="" target="_blank"><h1>Learn More</h1></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="app"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+    </div>
+    <footer id="footer">
+      <hr class="red">
+      <div id="socialmedia">
+        <a href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </div>
+      <p id="footertext">This is an unofficial website which is neither endorsed nor supported by Marvel Comics.<br>All Images and Names are the property of Marvel Comics<br>©2016 Marvel</p>
+    </footer>
   </body>
 </html>
